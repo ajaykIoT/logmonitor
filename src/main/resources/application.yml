@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: log-analyser
+    name: log-monitor
   datasource:
     driver-class-name: org.hsqldb.jdbc.JDBCDriver
     url: jdbc:hsqldb:file:db/alertsdb;DB_CLOSE_DELAY=5000

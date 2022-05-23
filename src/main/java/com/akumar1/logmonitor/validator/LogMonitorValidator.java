@@ -11,8 +11,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 @Component
-public class LogAnalyserValidator {
-    private static final Logger LOGGER = LoggerFactory.getLogger(LogAnalyserValidator.class);
+public class LogMonitorValidator {
+    private static final Logger LOGGER = LoggerFactory.getLogger(LogMonitorValidator.class);
 
     public void validateInput(Context context, String... args) {
         LOGGER.info("Validating the input...");

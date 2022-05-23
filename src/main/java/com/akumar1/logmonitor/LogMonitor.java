@@ -1,27 +1,25 @@
 package com.akumar1.logmonitor;
 
-import com.akumar1.logmonitor.service.LogAnalyserService;
+import com.akumar1.logmonitor.service.LogMonitorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.ImageBanner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.io.ClassPathResource;
 
 import java.time.Duration;
 import java.time.Instant;
 
 @SpringBootApplication
-public class LogAnalyser implements CommandLineRunner {
-    private static final Logger LOGGER = LoggerFactory.getLogger(LogAnalyser.class);
+public class LogMonitor implements CommandLineRunner {
+    private static final Logger LOGGER = LoggerFactory.getLogger(LogMonitor.class);
 
     @Autowired
-    private LogAnalyserService service;
+    private LogMonitorService service;
 
     public static void main(String... args) {
-        SpringApplication logMonitorApp = new SpringApplication(LogAnalyser.class);
+        SpringApplication logMonitorApp = new SpringApplication(LogMonitor.class);
         logMonitorApp.run(args);
     }
 
